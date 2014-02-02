@@ -26,8 +26,11 @@ Things you may want to cover:
 clone:
 
 $ git clone git@github.com:ismetacar/ab2014-blog.git
+
 $ cd ab2014-blog
+
 $ bundle
+
 $ rake db:migrate
 
 
