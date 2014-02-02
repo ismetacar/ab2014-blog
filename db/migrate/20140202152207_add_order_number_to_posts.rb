@@ -5,6 +5,6 @@
 class AddOrderNumberToPosts < ActiveRecord::Migration
   def change
     add_column :posts, :order_number, :string  
-    add_index :posts, :order_number
+    #add_index :posts, :order_number
   end
 end
