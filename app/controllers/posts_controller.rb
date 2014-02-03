@@ -18,8 +18,11 @@ class PostsController < ApplicationController
 #yeni post oluştur
   def create
     @post = Post.new(post_params)
-    @post.save
-    redirect_to @post
+    if @post.save
+      redirect_to @post
+  	else
+  	  render 'new'
+    end
   end
 #post düzenle
   def edit
