@@ -21,6 +21,8 @@ gem 'haml'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'rails_12factor'
+ 
 gem 'bootstrap-sass', '~> 3.1.0'
 
 gem 'execjs'
