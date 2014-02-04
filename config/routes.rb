@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :books
+
   # get "welcome/index"
 
   resources :posts do
