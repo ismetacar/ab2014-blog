@@ -1,0 +1,24 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ad:</strong>
+
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Soyad:</strong>
+
+  <%= @user.lname %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+
+  <%= image_tag(@user.image_url, :width => 150, :height => 100) if @user.image.present? %>
+</p>
+
+<%= link_to 'Düzenle', edit_user_path(@user) %> |
+<%= link_to 'Geri', users_path %>
+</center>

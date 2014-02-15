@@ -1,0 +1,28 @@
+<center>
+<h1>Tüm Gönderiler</h1>
+<img src="http://www.horsecarecourses.com/.a/6a015391a867e3970b017d3db85d9d970c-pi" class="img-circle">
+<table>
+  <tr>
+    <th>Başlık</th>
+    <th>İçerik</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.text %></td>
+    <td><%= link_to 'Göster', post_path(post), class: 'btn btn-success btn-xs' %></td>
+    <td><%= link_to 'Düzenle', edit_post_path(post), class: 'btn btn-warning btn-xs' %></td>
+    <td><%= link_to 'Sil', post_path(post), class: 'btn btn-danger btn-xs',
+                    method: :delete, data: { confirm: 'Baakk, emin misin?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<%= link_to 'Yeni Gönderi', new_post_path, class: 'btn btn-primary btn-sm' %>
+| <%= link_to 'Ana Sayfa', root_path, class: 'btn btn-info btn-sm' %>
+</center>

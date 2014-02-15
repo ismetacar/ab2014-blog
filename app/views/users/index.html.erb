@@ -1,0 +1,33 @@
+<center>
+<h1>Tüm Kullanıcılar</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>AD</th>
+      <th>SOYAD</th>
+      <th>Profil Fotografı</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.lname %></td>
+        <td><%= user.image %></td>
+        <td><%= link_to 'Göster', user %></td>
+        <td><%= link_to 'Düzenle', edit_user_path(user) %></td>
+        <td><%= link_to 'Sil', user, method: :delete, data: { confirm: 'Emin misin?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Yeni Kullanıcı', new_user_path %>
+| <%= link_to 'Anasayfa', root_path %>

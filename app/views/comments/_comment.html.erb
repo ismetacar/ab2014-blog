@@ -1,0 +1,19 @@
+<hr/>
+
+<p>
+  <strong>Yazar:</strong>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <strong>Yorum:</strong>
+  <%= comment.body %>
+</p>
+ 
+<p>
+  <%= link_to 'Yorumu Sil', [comment.post, comment], class: 'btn btn-danger btn-xs',
+               method: :delete,
+               data: { confirm: 'Madem silecektin niye yaptın?' } %>
+</p>
+
+<hr/>
