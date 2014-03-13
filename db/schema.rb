@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140224210852) do
+=======
+ActiveRecord::Schema.define(version: 20140204085234) do
+>>>>>>> 2daf0f1aceed7c368c28572ac0e247b600c737dc
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -32,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140224210852) do
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
+<<<<<<< HEAD
   create_table "denemes", force: true do |t|
     t.string   "provider"
     t.string   "uid"
@@ -42,6 +47,8 @@ ActiveRecord::Schema.define(version: 20140224210852) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 2daf0f1aceed7c368c28572ac0e247b600c737dc
   create_table "posts", force: true do |t|
     t.string   "title"
     t.text     "text"
@@ -49,6 +56,7 @@ ActiveRecord::Schema.define(version: 20140224210852) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "lname"
@@ -57,4 +65,6 @@ ActiveRecord::Schema.define(version: 20140224210852) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 2daf0f1aceed7c368c28572ac0e247b600c737dc
 end

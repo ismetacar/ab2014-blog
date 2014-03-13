@@ -6,12 +6,18 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+<<<<<<< HEAD
 gem 'carrierwave'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
 gem 'omniauth-facebook'  # facebook 
 
+=======
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
+>>>>>>> 2daf0f1aceed7c368c28572ac0e247b600c737dc
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
